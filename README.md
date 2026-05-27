@@ -23,12 +23,41 @@ The model is optimized for accurate classification real-time processing, and sca
 
 ## Features
 
-Our model was able to predict the all the numbers in the ASL with a prediction accuracy >95%.
+- Real-time hand gesture recognition using webcam input
 
-Features that can be added:
-* Increasing the vocabulary of our model
-* Adding feedback mechanism to make the model more robust
-* Adding more sign languages
+- CNN-based gesture classification
+
+- Custom gesture data collection using OpenCV
+
+- Image augmentation for improving model robustness
+
+- Training, validation, and testing pipeline
+
+- Live prediction window for supported ASL signs
+
+- Text-to-speech support using `pyttsx3`
+
+- Achieved over 95% test accuracy on supported gesture classes
+
+## Current Model Support
+
+The current model supports:
+
+- Numbers: `0-9`
+
+- Letters: `A-C`
+
+Future improvements can include:
+
+- Expanding support to more ASL alphabets
+
+- Improving recognition under different lighting conditions
+
+- Adding support for more sign languages
+
+- Adding feedback-based model improvement
+
+- Improving sentence-level interpretation
 
 ## Project Structure
 
@@ -79,20 +108,39 @@ This will help you in installing all the libraries required for the project.
 * Press `c` to start capturing gestures
 * Press `q` to exit the application
 
-## Status
-
-* Completed the Model training with more than 95% test accuracy
-* Working to expand the model by add more gestures
-* working on model so that it can interpret under any light conditions
-
 ## Demo
 ![Example screenshot](./final_model.gif)
 
-## Reference
+## Model Performance
 
-We have taken this model [here](https://youtu.be/NBzqY9tJd7M?feature=shared) as reference and used chatgpt and deepseek for development of model
+The CNN model achieved more than 95% test accuracy on the supported gesture classes. Accuracy may vary depending on lighting, camera quality, hand positioning, and background conditions.
 
-## Group
-1) Vishal Varma Vuddaraju UID: U39828798
-2) Rasmitha Chinthalapally UID: U57992748
-3) Srinija Reddy Maddula UID: U20959745
+## Future Improvements
+
+- Add support for the complete ASL alphabet
+
+- Improve performance in low-light and high-noise environments
+
+- Add hand landmark detection for better accuracy
+
+- Support sentence formation from predicted signs
+
+- Improve UI for easier interaction
+
+- Add deployment support for desktop or web-based usage
+
+## References
+
+This project was inspired by publicly available sign language recognition tutorials and further customized with additional development, preprocessing, and real-time prediction improvements.
+
+Reference video:  
+
+https://youtu.be/NBzqY9tJd7M?feature=shared
+
+## Contributors
+
+- Vishal Varma Vuddaraju
+
+- Rasmitha Chinthalapally
+
+- Srinija Reddy Maddula
